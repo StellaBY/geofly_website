@@ -53,7 +53,7 @@ def parse_post(fpath):
     img = soup.find('img')
     if img and img.has_attr('src'):
         image_name = os.path.basename(img['src'])
-        image_url = f"/{posts_dir}/images/{image_name}"
+        image_url = f"./{posts_dir}/images/{image_name}"
     else:
         image_url = ''
 
