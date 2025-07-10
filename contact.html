@@ -214,7 +214,7 @@
             <div class="col-12 col-lg-6 contact-box text-center text-md-left wow slideInRight" data-wow-delay=".8s" >
                 <div class="c-box wow fadeInRight">
                     <h4 class="small-heading">Leave Message</h4>
-                    <form class="contact-form" id="contact-form-data">
+                    <form class="contact-form" id="contact-form-data" action="https://formsubmit.co/huangby136@gmail.com" method="POST" enctype="multipart/form-data">
                         <div class="row my-form">
                             <div class="col-md-12 col-sm-12">
                                 <div id="result"></div>
@@ -232,10 +232,16 @@
                                 <input type="text" class="form-control" id="user_subject" name="userSubject" placeholder="Subject" required="required">
                             </div>
                             <div class="col-12">
-                                <label for="user_message"></label><textarea class="form-control" id="user_message" name="userMessage" placeholder="The messaging function is currently being updated and is temporarily unavailable. Please feel free to email me directly" rows="7" required="required"></textarea>
+                                <label for="user_message"></label><textarea class="form-control" id="user_message" name="userMessage" placeholder="Test..." rows="7" required="required"></textarea>
                             </div>
+
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_subject" value="New submission from Geofly pages!">
+                            <input type="hidden" name="_cc" value="byang85@ucsc.edu">
+
+
                             <div class="col-12">
-                                <button class="btn contact_btn btn-slider trans-btn mt-4 rounded-pill" type="button">SUBMIT
+                                <button class="btn contact_btn btn-slider trans-btn mt-4 rounded-pill" type="submit">SUBMIT
                                 </button>
                             </div>
                         </div>
