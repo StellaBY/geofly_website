@@ -1228,6 +1228,48 @@ input, select, textarea {margin :0;}
     display: block;
 }
 
+#blog-carousal {
+  position: relative;
+}
+
+#blog-carousal .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none; /* 让空白区域不挡鼠标 */
+}
+
+#blog-carousal .owl-nav button.owl-prev,
+#blog-carousal .owl-nav button.owl-next {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(34,34,34,0.85);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto; /* 让按钮可点 */
+  outline: none;
+}
+
+#blog-carousal .owl-nav i {
+  color: #fff;
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  #blog-carousal .owl-nav button.owl-prev,
+  #blog-carousal .owl-nav button.owl-next {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 
 
 

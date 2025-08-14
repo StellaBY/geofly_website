@@ -161,7 +161,7 @@ $('#blog-carousal').owlCarousel({
     loop:true,
     center:true,
     // margin:20,
-    nav:false,
+    nav:true,
     dots:true,
     responsive:{
         0:{
