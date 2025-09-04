@@ -350,6 +350,35 @@ header .navbar-collapse{
     display: none !important;
 }
 
+/* navbar color change here */
+
+.navbar {
+    background-color: #003C6D !important;  /* UCSC blue */
+}
+
+.navbar .nav-link {
+    color: #FFCC00 !important;  /* yellow */
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+    color: #FFFFFF !important;  /* white when stop */
+}
+
+.navbar .logo img {
+    max-height: 50px; /* logo */
+}
+
+/* small screen side bar */
+.outer-window .nav-link {
+    color: #003C6D !important;
+}
+.outer-window {
+    background-color: #FFCC00 !important;
+}
+
+
+
 /****************TRANSPARENT NAVBAR***************/
 .bg-trans-color{
     background-color: transparent !important;
@@ -518,10 +547,16 @@ header .navbar-collapse{
     width: 100%;
 }
 
-.navbar-light .navbar-nav .nav-link{
+/* .navbar-light .navbar-nav .nav-link{
     color: #FFFFFF !important;
+} */
+.navbar-light .navbar-nav .nav-link {
+    color: #FFCC00 !important;  /* UCSC Yellow */
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #FFFFFF !important;
+}
 
 /************SHOPPING CART DROPDOWN************/
 .mini-cart-content{
@@ -1390,7 +1425,7 @@ li.footer_list:hover{
 
 .project-content .btn {
     align-self: flex-start;
-    background-color: #007bff;
+    background-color: #003C6D;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;

@@ -403,16 +403,35 @@
             const card = document.createElement("div");
             card.className = "team-card text-center";
 
-            card.innerHTML = `
+            // card.innerHTML = `  // all with photo
+            //     <div class="team-photo">
+            //         <img src="${member.photo}" alt="${member.name}">
+            //     </div>
+            //     <div class="team-info">
+            //         <h3>${member.name}</h3>
+            //         <p class="sub-heading">${member.title}</p>
+            //         <p>${member.description}</p>
+            //     </div>
+            // `;
+
+            let photoHTML = "";
+            // only mean team have photo
+            if (index === 0) {
+            photoHTML = `
                 <div class="team-photo">
                     <img src="${member.photo}" alt="${member.name}">
-                </div>
+                </div>`;
+            }
+
+            card.innerHTML = `
+                ${photoHTML}
                 <div class="team-info">
                     <h3>${member.name}</h3>
                     <p class="sub-heading">${member.title}</p>
                     <p>${member.description}</p>
                 </div>
             `;
+            
             col.appendChild(card);
             row.appendChild(col);
         });
