@@ -1514,11 +1514,16 @@ li.footer_list:hover{
     padding: 80px 0;
 }
 
+.team-col {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
 .team-card {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    margin: 0 0 30px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1562,6 +1567,23 @@ li.footer_list:hover{
 
 .about{
     padding-top: 120px;
+}
+
+.team-divider {
+    margin: 60px auto;
+    padding: 20px 0;
+    border-top: 3px solid #222;
+    text-align: center;
+}
+
+.team-divider h2 {
+    margin-top: -20px;
+    display: inline-block;
+    background: #fff;
+    padding: 0 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
 }
 
 /******CHOOSE SECTION START******/
