@@ -1166,6 +1166,11 @@ input, select, textarea {margin :0;}
     transform: translateY(-10px);
 }
 
+/* modify the + numbers in index.html */
+.counter-box .count::after {
+  content: " " attr(data-suffix);
+}
+
 
 
 
